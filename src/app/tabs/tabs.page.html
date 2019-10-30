@@ -1,0 +1,22 @@
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="ribbon"></ion-icon>
+      <ion-label class="tela">Top</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="listPlayer">
+      <ion-icon name="contacts"></ion-icon>
+      <ion-badge color="danger" *ngIf="quantPlayer">{{quantPlayer}}</ion-badge>
+      <ion-label>Colecionadores</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="listGame">
+      <ion-icon name="logo-octocat"></ion-icon>
+      <ion-badge color="danger"*ngIf="quantGame">{{quantGame}}</ion-badge>
+      <ion-label>Toys</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>

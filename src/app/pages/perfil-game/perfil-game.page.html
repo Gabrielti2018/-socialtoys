@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil do Colecionavel</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let foto of game.foto">
+      <img src="{{foto}}">
+    </ion-slide>
+  </ion-slides>
+
+  <ion-item>
+    <ion-text>
+      <h2>{{game.nome}}</h2>
+      <p>Desrição: {{game.descricao}}</p>
+      <p>Modelo: {{game.console}}</p>
+      <p>Categoria: {{game.categoria}}</p>
+      <!-- <p>Valor: {{game.valor | currency : "BRL"}}</p> -->
+    </ion-text>
+  </ion-item>
+  <ion-content>
+    
+  </ion-content>
+</ion-content>

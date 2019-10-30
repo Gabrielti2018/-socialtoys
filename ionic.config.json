@@ -1,0 +1,7 @@
+{
+  "name": "socialtoys",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
