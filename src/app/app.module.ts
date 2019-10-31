@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { GooglePlus } from '@ionic-native/google-plus/ngx';
 import { Device } from '@ionic-native/device/ngx';
 import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
+import { Camera } from '@ionic-native/camera/ngx';
 
 //Firebase ------------------------
 import { AngularFireModule } from '@angular/fire';
@@ -33,7 +34,7 @@ import { PhotoLibrary } from '@ionic-native/photo-library/ngx';
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     GooglePlus,
     PhotoLibrary,
-    
+    Camera,
     Device,
     AndroidPermissions
   ],

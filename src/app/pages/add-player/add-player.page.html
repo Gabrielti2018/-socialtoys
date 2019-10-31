@@ -7,8 +7,7 @@
 
 <ion-content>
   <ion-item lines="none" class="foto">
-    <img src="assets/perfil.png" alt="foto perfil" (click)="tirarFoto()" *ngIf="!preview">
-
+    <img src="assets/perfil.png" alt="foto do perfil" (click)="tirarFoto()" *ngIf="!preview">
     <img [src]="preview" alt="foto perfil" (click)="tirarFoto()" *ngIf="preview">
   </ion-item>
 

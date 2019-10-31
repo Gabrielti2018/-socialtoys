@@ -31,7 +31,7 @@ export class AddPlayerPage implements OnInit {
 
   async ngOnInit() {
    
-    
+    await this.platform.ready();
 
     //Pega Id para autilaização dos dados do Player
     this.id = this.activedRoute.snapshot.paramMap.get("id");
